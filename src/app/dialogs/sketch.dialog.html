@@ -1,0 +1,16 @@
+<section class="mat-typography"
+         fxLayout="column"
+         fxLayoutAlign="start stretch"
+         fxFill>
+  <h2 mat-dialog-title>{{data.title}}</h2>
+  <mat-dialog-content fxFlex>
+    <section #canvas
+             [style.height.%]="100"></section>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-stroked-button
+            (click)="refresh()">Refresh</button>
+    <button mat-stroked-button
+            mat-dialog-close>Close</button>
+  </mat-dialog-actions>
+</section>

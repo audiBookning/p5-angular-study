@@ -1,0 +1,8 @@
+<attribution-card [attribution]="attribution"></attribution-card>
+<section fxLayout="row | wrap"
+         fxLayoutAlign="start start">
+  <sketch title="Random"
+          [init]="noise.createRandom"></sketch>
+  <sketch title="Noise"
+          [init]="noise.createNoise"></sketch>
+</section>
